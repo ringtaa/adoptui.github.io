@@ -26,21 +26,21 @@ Window:EditOpenButton({
 })
 
 local Tabs = {
-    Main = Window:Tab({ Title = "Auto Neon", Icon = "lightbulb" }),
-    Hide = Window:Tab({ Title = "Baby Farm", Icon = "layers" }),
+    Main = Window:Tab({ Title = "Auto Neon", Icon = "sparkles" }),
+    Hide = Window:Tab({ Title = "Baby Farm", Icon = "baby" }),
     Jump = Window:Tab({ Title = "Auto Farm GingerBread", Icon = "bitcoin" }),
-    Glass = Window:Tab({ Title = "Pet Farm", Icon = "grid-2x2" }),
-    Mingle = Window:Tab({ Title = "Pet Spawner", Icon = "tent" }),
+    Glass = Window:Tab({ Title = "Pet Farm", Icon = "cat" }),
+    Mingle = Window:Tab({ Title = "Trade Scam Protection", Icon = "shield-alert" }),
 }
 
 
 Tabs.Jump:Section({
-    Title = "Bypass",
-    Icon = "chess-queen",
+    Title = "GingerBread Farm",
+    Icon = "bitcoin",
 })
 
 Tabs.Jump:Toggle({
-    Title = "Enable Bypass Anticheat",
+    Title = "Auto Ice Skate",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -49,7 +49,7 @@ Tabs.Jump:Toggle({
 
 
 Tabs.Jump:Toggle({
-    Title = "Enable Fly",
+    Title = "Auto SleighBall Minigame",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -59,18 +59,26 @@ Tabs.Jump:Toggle({
 
 Tabs.Jump:Section({
     Title = "Best Features",
-    Icon = "medal",
+    Icon = "chess-queen",
 })
 
 Tabs.Jump:Button({
-    Title = "TP To StillWater Prison",
+    Title = "Pet Farm",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
 
 Tabs.Jump:Button({
-    Title = "Bring All Valuables Items",
+    Title = "Baby Farm",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
+    end,
+})
+
+
+Tabs.Jump:Button({
+    Title = "Auto Neon",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
